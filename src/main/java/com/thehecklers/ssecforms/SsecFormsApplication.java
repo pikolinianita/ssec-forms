@@ -67,7 +67,9 @@ class Stuff {
     }
 
     @GetMapping("/admin")
-    public String getAdminInfo() { return "Super secret admin info: FOR ADMIN EYES ONLY!"; }
+    public String getAdminInfo() {
+        return "Super secret admin info: FOR ADMIN EYES ONLY!";
+    }
 }
 
 //@Data
