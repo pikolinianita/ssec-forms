@@ -51,6 +51,8 @@ class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity http) throws Exception {
         http
+                .authorizeRequests().mvcMatchers("/admin").hasRole("ADMIN")
+                .and()
                 .authorizeRequests().anyRequest().authenticated()
                 .and()
                 .formLogin();
@@ -63,6 +65,9 @@ class Stuff {
     public String getStuff() {
         return "Here's some stuff!";
     }
+
+    @GetMapping("/admin")
+    public String getAdminInfo() { return "Super secret admin info: FOR ADMIN EYES ONLY!"; }
 }
 
 //@Data
