@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 HELP.md
+=======
+>>>>>>> 65f6d080532570789742c9ce7404a37b6ff35d66
 /target/
 !.mvn/wrapper/maven-wrapper.jar
 
@@ -19,6 +22,7 @@ HELP.md
 
 ### NetBeans ###
 /nbproject/private/
+<<<<<<< HEAD
 /nbbuild/
 /dist/
 /nbdist/
@@ -27,3 +31,10 @@ HELP.md
 
 ### VS Code ###
 .vscode/
+=======
+/build/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+>>>>>>> 65f6d080532570789742c9ce7404a37b6ff35d66
